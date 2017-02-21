@@ -4,15 +4,18 @@
     ],
     "compilerOptions": {
 
-        "target": "es5",
-        "lib": ["es2015"],
+        "target": "es6",
         "module": "commonjs",
         "moduleResolution": "node",
-        "outDir": "build",
+        "outDir": "lib",
+        "declaration": true,
         "rootDirs": ["src", "test"],
         "pretty": true,
         "noEmitOnError":true,
+        "sourceMap": true,
 
+        "alwaysStrict": true,
+        "forceConsistentCasingInFileNames": true,
         "noFallthroughCasesInSwitch": true,
         "noImplicitAny": true,
         "noImplicitReturns": true,

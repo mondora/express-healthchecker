@@ -3,7 +3,7 @@ node_modules/
 npm-debug.log
 
 # Typescript compiler output directory
-build/
+lib/
 
 # Coverage folders
 coverage/
