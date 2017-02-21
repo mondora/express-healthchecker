@@ -1,0 +1,14 @@
+{
+  "extends": "tslint:latest",
+  "rules": {
+    "arrow-parens": false,
+    "max-line-length": [false],
+    "no-console": [false],
+    "no-var-requires": false,
+    "object-literal-shorthand": false,
+    "object-literal-sort-keys": false,
+    "space-before-function-paren": true,
+    "trailing-comma": [false],
+    "variable-name": [false]
+  }
+}

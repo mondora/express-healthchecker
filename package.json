@@ -1,0 +1,37 @@
+{
+  "name": "express-healthchecker",
+  "version": "1.0.0",
+  "description": "Expose an express service health status",
+  "main": "build/index.js",
+  "scripts": {
+    "compile": "tsc",
+    "lint": "tslint src/**/*.ts test/**/*.ts",
+    "test": "NODE_ENV=test mocha --compilers ts:ts-node/register --recursive",
+    "coverage": "nyc --reporter=html --reporter=text --reporter=lcov --extension .ts npm test",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "prepublish": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mondora/express-healthchecker.git"
+  },
+  "author": "Paolo Scanferla <paolo.scanferla@mondora.com>",
+  "homepage": "https://github.com/mondora/express-healthchecker",
+  "devDependencies": {
+    "@types/chai": "^3.4.35",
+    "@types/express": "^4.0.35",
+    "@types/mocha": "^2.2.39",
+    "@types/supertest-as-promised": "^2.0.32",
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.16",
+    "express": "^4.14.1",
+    "mocha": "^3.2.0",
+    "nyc": "^10.1.2",
+    "supertest": "^3.0.0",
+    "supertest-as-promised": "^4.0.2",
+    "ts-node": "^2.1.0",
+    "tslint": "^4.4.2",
+    "typescript": "^2.1.6"
+  },
+  "dependencies": {}
+}

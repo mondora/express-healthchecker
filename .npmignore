@@ -1,0 +1,7 @@
+# Npm files
+node_modules/
+npm-debug.log
+
+# Coverage folders
+coverage/
+.nyc_output

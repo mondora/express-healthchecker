@@ -1,0 +1,10 @@
+# Npm files
+node_modules/
+npm-debug.log
+
+# Typescript compiler output directory
+build/
+
+# Coverage folders
+coverage/
+.nyc_output
