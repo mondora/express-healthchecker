@@ -38,7 +38,7 @@ module.exports = {
         });
     }
 };
-```
+```
 
 Use them in your express app:
 
@@ -53,8 +53,7 @@ express()
         healthChecks: [myHealthCheck],
         accessToken: process.env.HEALTH_ROUTE_ACCESS_TOKEN
     }));
-
-``` 
+```
 
 When accessing the `/health` resource all checks are run and the resource
 responds with:
@@ -71,7 +70,7 @@ are returned in the response.
 
 Example requests/responses:
 
-```
+```sh
 GET /health
 
 200 OK
